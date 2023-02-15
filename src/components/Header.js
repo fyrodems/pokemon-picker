@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <Container>
       <Nav>
-        <img src="./logo.png" alt="logo" />
+        <img src="./images/logo.png" alt="logo" />
         <GoHome href="/">HOME</GoHome>
       </Nav>
       <Info>

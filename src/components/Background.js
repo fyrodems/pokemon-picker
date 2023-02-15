@@ -14,6 +14,6 @@ const Image = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url("./background.jpg");
+  background-image: url("./images/background.jpg");
   background-size: cover;
 `;
