@@ -8,7 +8,7 @@ const Header = () => {
         <GoHome href="/">HOME</GoHome>
       </Nav>
       <Info>
-        <span>zadanie rekrutacyjne inksearch</span>
+        <span></span>
         <span>Martyna Filipiak</span>
       </Info>
     </Container>
