@@ -1,6 +1,6 @@
 // import { useEffect } from "react";
 // import styled from "styled-components";
-// import Background from "../common/Background";
+// // import Background from "../common/Background";
 
 // const GetSeries = () => {
 //   useEffect(() => {

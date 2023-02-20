@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Container from "../common/Container";
 
 const CardData = ({ data }) => {
   const img = data?.image;
@@ -25,8 +26,10 @@ const CardData = ({ data }) => {
             </li>
             <li>
               <span className="title">attacks:</span>
-              {data?.attacks?.map((attack) => (
-                <span className="atack">{attack.name}</span>
+              {data?.attacks?.map((attack, i) => (
+                <span key={i} className="atack">
+                  {attack.name}
+                </span>
               ))}
             </li>
           </ul>
@@ -38,23 +41,13 @@ const CardData = ({ data }) => {
 
 export default CardData;
 
-const Container = styled.div`
-  margin: 0 auto;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 30px;
-  box-shadow: 0 0 20px -5px rgb(66, 68, 90);
-  padding: 20px;
-  text-align: center;
-  width: fit-content;
+const Wrapper = styled.div`
+  display: flex;
 
-  h2 {
+  ~ h2 {
     display: inline-block;
     margin-bottom: 30px;
   }
-`;
-
-const Wrapper = styled.div`
-  display: flex;
 
   img {
     border-radius: 10px;
