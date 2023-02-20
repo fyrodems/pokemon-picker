@@ -9,12 +9,13 @@ const Header = () => {
       </Nav>
       <Info>
         <span></span>
-        <span>Martyna Filipiak</span>
+        <span></span>
       </Info>
     </Container>
   );
 };
 export default Header;
+
 const Container = styled.div`
   width: 100%;
   height: 70px;

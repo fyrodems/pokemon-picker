@@ -17,8 +17,6 @@ const CardPage = () => {
     })();
   }, [id]);
 
-  // console.log(cardData);
-
   return (
     <Container>
       <Background />
