@@ -1,14 +1,14 @@
-import React from "react";
+// import { useEffect } from "react";
 import styled from "styled-components";
-import Cards from "../Cards";
-import Background from "../Background";
+// import Cards from "../Cards";
+import Background from "../common/Background";
 
 const HomePage = () => {
   return (
     <Container>
       <Background />
       <h1 className="title">Pokemon picker</h1>
-      <Cards />
+      {/* <Cards /> */}
     </Container>
   );
 };

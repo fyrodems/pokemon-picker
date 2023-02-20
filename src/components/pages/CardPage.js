@@ -1,8 +1,8 @@
-import Background from "../Background";
+import Background from "../common/Background";
 import styled from "styled-components";
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import CardData from "../CardData";
+import CardData from "../fetchComponents/CardData";
 
 const CardPage = () => {
   const { id } = useParams();
