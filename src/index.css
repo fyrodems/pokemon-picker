@@ -11,7 +11,8 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   color: white;
 }
-h1.title {
+h1.title,
+h2 {
     text-align: center;
     margin: 50px;
 }

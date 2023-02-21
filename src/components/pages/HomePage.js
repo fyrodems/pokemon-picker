@@ -9,6 +9,7 @@ const HomePage = () => {
     <Container>
       <Background />
       <h1 className="title">Pokemon picker</h1>
+      <h2>Pick a serie!</h2>
       {/* <Cards /> */}
       <GetSeries />
     </Container>
