@@ -19,6 +19,7 @@ const GetSeries = () => {
 
   return (
     <Container>
+      {/* <Wrapper> */}
       {series.map((serie) => {
         if (serie.logo) {
           return (
@@ -29,18 +30,28 @@ const GetSeries = () => {
           );
         }
       })}
+      {/* </Wrapper> */}
     </Container>
   );
 };
 
 export default GetSeries;
 
+// const Wrapper = styled.div`
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+// `;
+
 const SingleSerie = styled.div`
   display: flex;
   flex-direction: column;
+  align-intems: center;
+  justify-content: flex-end;
   padding: 20px;
   gap: 30px;
   cursor: pointer;
+  // box-shadow: 0 0 20px -5px rgb(66, 68, 90);
 
   transition: 500ms;
 
@@ -55,5 +66,7 @@ const SingleSerie = styled.div`
 
   span {
     text-align: center;
+    // font-size: 18px;
+    white-space: wrap;
   }
 `;
