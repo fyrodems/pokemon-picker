@@ -29,6 +29,7 @@ const GetSeries = () => {
             </SingleSerie>
           );
         }
+        return null;
       })}
       {/* </Wrapper> */}
     </Container>
