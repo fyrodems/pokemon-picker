@@ -1,41 +1,43 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import Container from "../common/Container";
-// import Loader from "../common/Loader";
 
-const GetSeries = () => {
-  const [series, SetSeries] = useState([]);
+const GetSets = () => {
+  const [sets, setSets] = useState([]);
+  const [numberOfSets, setNumberOfSets] = useState([]);
 
   useEffect(() => {
     (async () => {
-      const response = await fetch(`https://api.tcgdex.net/v2/en/series`);
+      const response = await fetch(`https://api.tcgdex.net/v2/en/sets`);
       const responseData = await response.json();
-      SetSeries(responseData);
+      setSets(responseData);
+      setNumberOfSets(responseData.length);
     })();
   }, []);
 
-  console.log(series);
+  console.log(sets);
+  console.log(numberOfSets);
 
   return (
     <Container>
-      {series.map((serie) => {
-        if (serie.logo) {
-          return (
-            <SingleSerie key={serie.id}>
-              <img alt={serie.name} src={serie.logo} />
-              <span>{serie.name}</span>
-            </SingleSerie>
-          );
-        }
+      {sets.map((set) => {
+        // if (set.logo) {
+        //   return (
+        //     <SingleSet key={set.id}>
+        //       <img alt={set.name} src={set.logo} />
+        //       <span>{set.name}</span>
+        //     </SingleSet>
+        //   );
+        // }
         return null;
       })}
     </Container>
   );
 };
 
-export default GetSeries;
+export default GetSets;
 
-const SingleSerie = styled.div`
+const SingleSet = styled.div`
   display: flex;
   flex-direction: column;
   align-intems: center;
@@ -58,6 +60,7 @@ const SingleSerie = styled.div`
 
   span {
     text-align: center;
+    // font-size: 18px;
     white-space: wrap;
   }
 `;

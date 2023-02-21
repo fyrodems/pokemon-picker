@@ -1,17 +1,18 @@
-// import { useEffect } from "react";
 import styled from "styled-components";
-// import Cards from "../fetchComponents/Cards";
 import Background from "../common/Background";
-import GetSeries from "../fetchComponents/GetSeries";
+// import Cards from "../fetchComponents/Cards";
+// import GetSeries from "../fetchComponents/GetSeries";
+import GetSets from "../fetchComponents/GetSet";
 
 const HomePage = () => {
   return (
     <Container>
       <Background />
       <h1 className="title">Pokemon picker</h1>
-      <h2>Pick a serie!</h2>
+      {/* <h2>Pick a serie!</h2> */}
       {/* <Cards /> */}
-      <GetSeries />
+      {/* <GetSeries /> */}
+      <GetSets />
     </Container>
   );
 };
