@@ -1,12 +1,6 @@
 import styled from "styled-components";
 
-const Background = () => {
-  return <Image />;
-};
-
-export default Background;
-
-const Image = styled.div`
+const Background = styled.div`
   position: fixed;
   filter: brightness(20%);
   z-index: -1;
@@ -17,3 +11,5 @@ const Image = styled.div`
   background-image: url("./images/background.jpg");
   background-size: cover;
 `;
+
+export default Background;
