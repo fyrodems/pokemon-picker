@@ -8,11 +8,11 @@ const Cards = () => {
   const imageSuffix = "/high.webp";
 
   useEffect(() => {
-    fetch("https://api.tcgdex.net/v2/en/cards")
-      .then((res) => res.json())
-      .then((result) => {
-        setCards(result.slice(6, 11));
-      });
+    (async () => {
+      const response = await fetch(`https://api.tcgdex.net/v2/en/cards`);
+      const responseData = await response.json();
+      setCards(responseData.slice(6, 11));
+    })();
   }, []);
 
   return (
